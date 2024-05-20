@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.awai.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.awai.ConfirmationFragment"
+        android:label="ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation"
+        >
+        <action
+            android:id="@+id/action_confirmationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_confirmationFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.awai.ContactFragment"
+        android:label="ContactFragment"
+        tools:layout="@layout/fragment_contact"
+        >
+        <action
+            android:id="@+id/action_contactFragment_to_callingFragment"
+            app:destination="@id/callingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callingFragment"
+        android:name="com.example.awai.CallingFragment"
+        android:label="CallingFragment"
+        tools:layout="@layout/fragment_calling"
+        >
+        <action
+                android:id="@+id/action_callingFragment_to_notificationFragment"
+                app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/notificationFragment"
+            android:name="com.example.awai.NotificationFragment"
+            android:label="NotificationFragment"
+            tools:layout="@layout/fragment_notification"
+            />
+</navigation>
