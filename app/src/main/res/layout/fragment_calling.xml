@@ -20,13 +20,13 @@
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/countdownTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="150dp"
         android:text="3"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -38,8 +38,8 @@
     <Button
         android:id="@+id/cancelBtn"
         android:layout_width="150dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="352dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="350dp"
         android:text="I am safe"
         android:textColor="@color/black"
         android:textStyle="bold"
