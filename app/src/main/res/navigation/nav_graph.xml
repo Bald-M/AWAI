@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_homeFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_settingFragment"
+                app:destination="@id/settingFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment"
@@ -47,11 +50,20 @@
         <action
                 android:id="@+id/action_callingFragment_to_notificationFragment"
                 app:destination="@id/notificationFragment" />
+        <action
+                android:id="@+id/action_callingFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
     </fragment>
     <fragment
             android:id="@+id/notificationFragment"
             android:name="com.example.awai.NotificationFragment"
             android:label="NotificationFragment"
             tools:layout="@layout/fragment_notification"
+            />
+    <fragment
+            android:id="@+id/settingFragment"
+            android:name="com.example.awai.SettingFragment"
+            android:label="SettingFragment"
+            tools:layout="@layout/fragment_setting"
             />
 </navigation>
