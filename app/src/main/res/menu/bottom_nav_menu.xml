@@ -11,7 +11,7 @@
         />
 
     <item
-        android:id="@+id/contactFragment"
+        android:id="@+id/contactManagementFragment"
         android:icon="@drawable/ic_people"
         android:title="Contact"
         />

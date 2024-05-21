@@ -17,6 +17,9 @@
         <action
                 android:id="@+id/action_homeFragment_to_settingFragment"
                 app:destination="@id/settingFragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_contactManagementFragment"
+                app:destination="@id/contactManagementFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment"
@@ -66,4 +69,9 @@
             android:label="SettingFragment"
             tools:layout="@layout/fragment_setting"
             />
+    <fragment
+            android:id="@+id/contactManagementFragment"
+            android:name="com.example.awai.ContactManagementFragment"
+            tools:layout="@layout/fragment_contact_management"
+            android:label="ContactManagementFragment" />
 </navigation>
