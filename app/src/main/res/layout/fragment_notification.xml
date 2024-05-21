@@ -36,7 +36,7 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:text="1.Find a safe space \n2.Stay quiet\n3. Stay Hidden\n4.Stay Calm"
+            android:text="1.Find a safe space \n2.Stay quiet\n3.Stay hidden\n4.Stay calm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView8"
