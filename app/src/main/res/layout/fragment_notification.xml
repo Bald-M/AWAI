@@ -18,7 +18,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintVertical_bias="0.15" />
+            app:layout_constraintVertical_bias="0.1" />
 
     <TextView
             android:text="Here's what you can do in the meantime:"
