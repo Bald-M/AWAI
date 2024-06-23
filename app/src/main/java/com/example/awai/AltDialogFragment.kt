@@ -49,12 +49,12 @@ class AltDialogFragment : DialogFragment() {
             relations = et_relations.text.toString()
             try {
                 if (name.equals("") || address.equals("") || phone.equals("") || email.equals("") || relations.equals("")) {
-                    Toast.makeText(context, "信息不完整", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Incomplete information", Toast.LENGTH_LONG).show()
                 } else {
                     if (dbHelper != null) {
                         dbHelper.updateRecord(id!!,name!!, address!!, phone!!, email!!, relations!!)
                     }
-                    Toast.makeText(context, "保存成功", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Save Successful", Toast.LENGTH_LONG).show()
                     dismiss()
                 }
             } catch (e: Exception) {
@@ -66,7 +66,7 @@ class AltDialogFragment : DialogFragment() {
             if (dbHelper != null) {
                 id?.let { it1 -> dbHelper.deleteRecord(it1) }
             }
-            Toast.makeText(context, "删除成功", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "Delete Successful", Toast.LENGTH_LONG).show()
             dismiss()
         }
         builder.setView(view)

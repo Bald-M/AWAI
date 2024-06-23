@@ -20,7 +20,6 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         getData()
         val adapter = activity?.let { MyCustomAdapter(it, dataList) }
         listView.adapter = adapter
-        // Should add a return to the menu button
 
         val sendBtn = view.findViewById<Button>(R.id.sendBtn)
 

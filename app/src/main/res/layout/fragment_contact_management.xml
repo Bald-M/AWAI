@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
 
     <ListView
             android:id="@+id/lv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1" />
+
+
     <androidx.cardview.widget.CardView
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             app:layout_constraintEnd_toEndOf="@+id/cardView3"
             app:layout_constraintStart_toStartOf="@+id/cardView3"
@@ -27,8 +27,7 @@
         <LinearLayout
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp">
+                android:layout_gravity="center">
 
             <ImageView
                     android:layout_gravity="center"

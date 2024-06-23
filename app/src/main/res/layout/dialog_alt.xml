@@ -8,31 +8,31 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入姓名" />
+        android:hint="Please input name" />
 
     <EditText
         android:id="@+id/et_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入地址"
+        android:hint="please input address"
         android:layout_marginTop="6dp" />
     <EditText
         android:id="@+id/et_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入电话号"
+        android:hint="please input phone number"
         android:layout_marginTop="6dp" />
     <EditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入邮箱号"
+        android:hint="please input email"
         android:layout_marginTop="6dp" />
     <EditText
         android:id="@+id/et_relations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入关系"
+        android:hint="what's your relationship with the person"
         android:layout_marginTop="6dp" />
     <LinearLayout
         android:gravity="right"
@@ -45,13 +45,13 @@
             android:id="@+id/bt_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="保存"
+            android:text="save"
              />
         <Button
             android:id="@+id/bt_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="删除"
+            android:text="delete"
             />
     </LinearLayout>
 

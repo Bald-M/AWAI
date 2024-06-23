@@ -49,17 +49,17 @@ class ContactManagementFragment : Fragment(R.layout.fragment_contact_management)
         private val context: Context,
         private val data: ArrayList<HashMap<String, String>>
     ) : BaseAdapter() {
-        // 返回数据项数量
+        // return data count
         override fun getCount(): Int {
             return data.size
         }
 
-        // 返回指定位置的数据项
+        // return item data
         override fun getItem(position: Int): HashMap<String, String> {
             return data[position]
         }
 
-        // 返回指定位置的数据项ID
+        // return item id
         override fun getItemId(position: Int): Long {
             return position.toLong()
         }
@@ -87,6 +87,7 @@ class ContactManagementFragment : Fragment(R.layout.fragment_contact_management)
         dataList.clear()
         while (res.moveToNext()) {
             // 创建一个 HashMap 对象，并填充数据
+            // Create a hashmap instance
             val dataHashMap1 = HashMap<String, String>()
             dataHashMap1["id"] = res.getString(0)
             dataHashMap1["name"] = res.getString(1)
