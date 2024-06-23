@@ -1,135 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
-    <androidx.cardview.widget.CardView
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintVertical_bias="0.05"
-            android:id="@+id/cardView">
-
-        <LinearLayout
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp">
-
-            <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="24dp"
-                    android:src="@drawable/ic_person" />
-
-            <TextView
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="jack smith"
-                    android:textColor="@color/black"
-                    android:layout_marginEnd="36dp"
-                    android:textSize="20sp" />
-
-            <Button
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/ic_edit_note" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            app:layout_constraintEnd_toEndOf="@+id/cardView"
-            app:layout_constraintStart_toStartOf="@+id/cardView"
-            android:layout_marginTop="20dp"
-            android:id="@+id/cardView2"
-            app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-        <LinearLayout
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp">
-
-            <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="24dp"
-                    android:src="@drawable/ic_person" />
-
-            <TextView
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="susan johnson"
-                    android:textColor="@color/black"
-                    android:layout_marginEnd="36dp"
-                    android:textSize="20sp" />
-
-
-            <Button
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/ic_edit_note" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            app:layout_constraintEnd_toEndOf="@+id/cardView2"
-            app:layout_constraintStart_toStartOf="@+id/cardView2"
-            android:layout_marginTop="20dp"
-            android:id="@+id/cardView3"
-            app:layout_constraintTop_toBottomOf="@+id/cardView2"
-            app:layout_constraintHorizontal_bias="0.0">
-
-        <LinearLayout
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp">
-
-            <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="24dp"
-                    android:src="@drawable/ic_person" />
-
-            <TextView
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="terry bull"
-                    android:textColor="@color/black"
-                    android:layout_marginEnd="36dp"
-                    android:textSize="20sp" />
-
-            <Button
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/ic_edit_note" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
+    <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
     <androidx.cardview.widget.CardView
             android:layout_width="320dp"
             android:layout_height="60dp"
@@ -173,4 +57,4 @@
     </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
