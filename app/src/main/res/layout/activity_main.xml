@@ -5,8 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity"
-        >
+        tools:context=".MainActivity">
 
     <!-- Top Logo -->
     <LinearLayout
@@ -75,10 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:background="@color/blue"
-            app:menu="@menu/bottom_nav_menu"
-            app:itemTextColor="@color/background"
-            app:itemIconTint="@color/background" />
+            android:background="@color/white"
+            app:menu="@menu/bottom_nav_menu" />
 
 
 </LinearLayout>
