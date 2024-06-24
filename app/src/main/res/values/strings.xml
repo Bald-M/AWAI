@@ -3,4 +3,10 @@
     <string name="app_name">AWAI</string>
     <string name="do_you_need_help">do you need help?</string>
     <string name="press_in_case_of_emergency">press in case of emergency</string>
+    <string name="need_help_now">Do you need help right now?</string>
+    <string name="safe_place_now">Are you in a safe place right now?</string>
+    <string name="grown_up_with_you">Is there a grown-up with you who makes you feel safe?</string>
+    <string name="are_you_hurt">Are you hurt?</string>
+    <string name="are_you_scared">Are you feeling scared?</string>
+    <string name="someone_being_mean">Is someone being mean to you?</string>
 </resources>

@@ -6,19 +6,19 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
-class ConfirmationFragment : Fragment(R.layout.fragment_confirmation) {
+class BeingMeanFragment : Fragment(R.layout.fragment_someone_being_mean) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val cancelBtn = view.findViewById<ImageView>(R.id.closeBtn)
         val confirmBtn = view.findViewById<ImageView>(R.id.confirmBtn)
+        val backBtn = view.findViewById<ImageView>(R.id.closeBtn)
 
-        cancelBtn.setOnClickListener{
-            findNavController().navigate(R.id.action_confirmationFragment_to_homeFragment)
+        backBtn.setOnClickListener{
+            findNavController().navigate(R.id.action_beingMeanFragment_to_homeFragment)
         }
 
         confirmBtn.setOnClickListener{
-            findNavController().navigate(R.id.action_confirmationFragment_to_safeConfirmationFragment)
+            findNavController().navigate(R.id.action_beingMeanFragment_to_contactFragment)
         }
     }
 }
