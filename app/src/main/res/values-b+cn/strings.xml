@@ -1,6 +1,7 @@
 <!-- Maori For Teen -->
 <resources>
     <string name="app_name">AWAI</string>
+    <string name="welcome_message">Nau mai haere mai</string>
     <string name="do_you_need_help">do you need help?</string>
     <string name="press_in_case_of_emergency">press in case of emergency</string>
     <string name="need_help_now">Do you need help right now?</string>

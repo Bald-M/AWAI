@@ -1,6 +1,7 @@
 <!-- Maori For Child -->
 <resources>
     <string name="app_name">AWAI</string>
+    <string name="welcome_message">Nau mai haere mai</string>
     <string name="do_you_need_help">kei te hiahia āwhina koe?</string>
     <string name="press_in_case_of_emergency">pāwhiria mēnā he ohotata</string>
     <string name="need_help_now">Kei te hiahia āwhina koe ināianei?</string>
