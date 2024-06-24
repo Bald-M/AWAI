@@ -13,6 +13,7 @@ class GrownUpFragment : Fragment(R.layout.fragment_grownupwith_confirmation) {
 
         val confirmBtn = view.findViewById<ImageView>(R.id.confirmBtn)
         val backBtn = view.findViewById<ImageView>(R.id.closeBtn)
+        val emergencyBtn = view.findViewById<Button>(R.id.emergencyBtn)
 
         backBtn.setOnClickListener{
             findNavController().navigate(R.id.action_grownUpFragment_to_homeFragment)
@@ -20,6 +21,10 @@ class GrownUpFragment : Fragment(R.layout.fragment_grownupwith_confirmation) {
 
         confirmBtn.setOnClickListener{
             findNavController().navigate(R.id.action_grownUpFragment_to_hurtConfirmationFragment)
+        }
+
+        emergencyBtn.setOnClickListener{
+            findNavController().navigate(R.id.action_grownUpFragment_to_contactFragment)
         }
 
 

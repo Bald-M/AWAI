@@ -13,6 +13,7 @@ class SafeConfirmationFragment : Fragment(R.layout.fragment_safe_confirmation) {
 
         val confirmBtn = view.findViewById<ImageView>(R.id.confirmBtn)
         val backBtn = view.findViewById<ImageView>(R.id.closeBtn)
+        val emergencyBtn = view.findViewById<Button>(R.id.emergencyBtn)
 
         backBtn.setOnClickListener{
             findNavController().navigate(R.id.action_safeConfirmationFragment_to_homeFragment)
@@ -21,5 +22,7 @@ class SafeConfirmationFragment : Fragment(R.layout.fragment_safe_confirmation) {
         confirmBtn.setOnClickListener{
             findNavController().navigate(R.id.action_safeConfirmationFragment_to_grownUpFragment)
         }
+
+
     }
 }

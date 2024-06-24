@@ -28,11 +28,11 @@
             tools:layout="@layout/fragment_confirmation"
             >
         <action
-                android:id="@+id/action_confirmationFragment_to_homeFragment"
-                app:destination="@id/homeFragment" />
+                android:id="@+id/action_confirmationFragment_to_hurtConfirmationFragment"
+                app:destination="@id/hurtConfirmationFragment" />
         <action
-                android:id="@+id/action_confirmationFragment_to_safeConfirmationFragment"
-                app:destination="@id/safeConfirmationFragment" />
+                android:id="@+id/action_confirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
     </fragment>
     <fragment
             android:id="@+id/contactFragment"
@@ -99,6 +99,9 @@
         <action
                 android:id="@+id/action_grownUpFragment_to_hurtConfirmationFragment"
                 app:destination="@id/hurtConfirmationFragment" />
+        <action
+                android:id="@+id/action_grownUpFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
     </fragment>
     <fragment
             android:id="@+id/hurtConfirmationFragment"
@@ -112,6 +115,9 @@
         <action
                 android:id="@+id/action_hurtConfirmationFragment_to_scaredConfirmationFragment"
                 app:destination="@id/scaredConfirmationFragment" />
+        <action
+                android:id="@+id/action_hurtConfirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
     </fragment>
     <fragment
             android:id="@+id/scaredConfirmationFragment"
@@ -125,6 +131,9 @@
         <action
                 android:id="@+id/action_scaredConfirmationFragment_to_beingMeanFragment"
                 app:destination="@id/beingMeanFragment" />
+        <action
+                android:id="@+id/action_scaredConfirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
     </fragment>
     <fragment
             android:id="@+id/beingMeanFragment"
@@ -137,6 +146,9 @@
                 app:destination="@id/homeFragment" />
         <action
                 android:id="@+id/action_beingMeanFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
+        <action
+                android:id="@+id/action_beingMeanFragment_to_contactFragment2"
                 app:destination="@id/contactFragment" />
     </fragment>
 </navigation>

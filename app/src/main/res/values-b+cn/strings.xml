@@ -10,4 +10,10 @@
     <string name="are_you_hurt">Are you hurt?</string>
     <string name="are_you_scared">Are you feeling scared?</string>
     <string name="someone_being_mean">Is someone being mean to you?</string>
+    <string name="child_mode">Tamariki mode</string>
+    <string name="change_details">Whakarerekē ngā taipitopito</string>
+    <string name="language">Reo</string>
+    <string name="help">Āwhina</string>
+    <string name="about">Tuhinga o mua</string>
+    <string name="report_a_problem">Whakaatanga i te raruraru</string>
 </resources>

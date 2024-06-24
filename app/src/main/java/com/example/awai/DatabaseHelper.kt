@@ -14,6 +14,7 @@ class DatabaseHelper(context: Context) :
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
     }
 
+
     fun insertRecord(name: String, address: String, phone: String, email: String, relations: String) {
         val db = this.writableDatabase
         val contentValues = ContentValues()
@@ -41,6 +42,13 @@ class DatabaseHelper(context: Context) :
         val db = this.writableDatabase
         db.delete("record","id = ?", arrayOf(id))
     }
+
+    fun checkPoliceRecord(): Cursor {
+        val db = this.writableDatabase
+        val res = db.rawQuery("SELECT * FROM record WHERE name = ?", arrayOf("Police"))
+        return res
+    }
+
 
     val allData : Cursor
         get() {
