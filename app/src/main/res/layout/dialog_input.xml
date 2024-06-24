@@ -8,7 +8,7 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update name"
+            android:text="Please input name"
             android:textColor="#000000"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
@@ -28,7 +28,7 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update address"
+            android:text="Please input address"
             android:textColor="#000000"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
@@ -48,7 +48,7 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update phone number"
+            android:text="Please input phone number"
             android:textColor="#000000"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
@@ -68,7 +68,7 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update email"
+            android:text="Please input email"
             android:textColor="#000000"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
@@ -88,7 +88,7 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update Relationship"
+            android:text="Please input Relationship"
             android:textColor="#000000"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
