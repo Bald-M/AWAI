@@ -1,6 +1,6 @@
-<!-- English For Child -->
+<!-- English For Teen -->
 <resources>
     <string name="app_name">AWAI</string>
-    <string name="do_you_need_help">do you need help?</string>
+    <string name="do_you_need_help">Do you require assistance?</string>
     <string name="press_in_case_of_emergency">press in case of emergency</string>
 </resources>
