@@ -39,8 +39,8 @@ class SplashScreen : AppCompatActivity() {
 
 
         imageView.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("navigateToLogin", true)
+            val intent = Intent(this, PromptActivity::class.java)
+            intent.putExtra("navigateToPrompt", true)
             startActivity(intent)
             finish()
         }, DELAY_TIME)
