@@ -1,9 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/salmon_pink"/>
-            <corners android:radius="360dp"/>
+            <solid android:color="#E4A024" />
+            <corners android:radius="360dp" />
+            <stroke android:width="4dp" android:color="#FFDD9E" />
         </shape>
     </item>
-    <item android:drawable="@mipmap/ic_panic_button_foreground" android:gravity="center"/>
+    <!-- Centered icon -->
+    <item android:drawable="@mipmap/ic_panic_button_foreground" android:gravity="center" />
 </layer-list>

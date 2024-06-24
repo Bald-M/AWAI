@@ -3,8 +3,9 @@
     <!-- Background colour of the close icon may be red -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/periwinkle"/>
+            <solid android:color="#FFDD9E"/>
             <corners android:radius="360dp"/>
+            <stroke android:width="2dp" android:color="#E4A024" /> <!-- Outside color -->
         </shape>
     </item>
 
@@ -15,7 +16,7 @@
             android:width="24dp"
             android:viewportWidth="24"
             android:viewportHeight="24"
-            android:tint="#000000"
+            android:tint="#E4A024"
             xmlns:android="http://schemas.android.com/apk/res/android">
             <path
                 android:fillColor="@android:color/white"

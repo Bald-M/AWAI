@@ -5,10 +5,11 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/et_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Please enter name" />
+            android:id="@+id/et_name"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:hint="Please enter name"
+            android:fontFamily="sans-serif" />
 
     <EditText
         android:id="@+id/et_address"
