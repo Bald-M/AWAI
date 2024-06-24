@@ -1,6 +1,19 @@
 <!-- Maori For Child -->
 <resources>
     <string name="app_name">AWAI</string>
-    <string name="do_you_need_help">kei te hiahia āwhina koe? Maori Child</string>
+    <string name="welcome_message">Nau mai haere mai</string>
+    <string name="do_you_need_help">kei te hiahia āwhina koe?</string>
     <string name="press_in_case_of_emergency">pāwhiria mēnā he ohotata</string>
+    <string name="need_help_now">Kei te hiahia āwhina koe ināianei?</string>
+    <string name="safe_place_now">Kei te wāhi haumaru koe ināianei?</string>
+    <string name="grown_up_with_you">Kei te taha o koe tētahi pakeke e whakapā atu ana i te haumaru ki a koe?</string>
+    <string name="are_you_hurt">Kua whara koe?</string>
+    <string name="are_you_scared">Kei te mataku koe?</string>
+    <string name="someone_being_mean">Kei te mahi hē tētahi ki a koe?</string>
+    <string name="child_mode">Tamariki mode</string>
+    <string name="change_details">Whakarerekē ngā taipitopito</string>
+    <string name="language">Reo</string>
+    <string name="help">Āwhina</string>
+    <string name="about">Tuhinga o mua</string>
+    <string name="report_a_problem">Whakaatanga i te raruraru</string>
 </resources>

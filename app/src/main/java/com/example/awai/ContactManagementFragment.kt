@@ -17,6 +17,8 @@ class ContactManagementFragment : Fragment(R.layout.fragment_contact_management)
     var dataList: ArrayList<HashMap<String, String>> = ArrayList()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initPoliceData()
         val listView = view.findViewById<ListView>(R.id.lv)
         val dialog = InputDialogFragment()
         val context: Context? = getActivity()
@@ -39,10 +41,25 @@ class ContactManagementFragment : Fragment(R.layout.fragment_contact_management)
             listView.adapter = adapter
         }
         val addBtn = view.findViewById<Button>(R.id.addBtn)
+        // DialogFragment Pop Up
         addBtn.setOnClickListener{
             fragmentManager?.let { it1 -> dialog.show(it1,"DialogFragment") }
         }
     }
+
+    fun initPoliceData(){
+        val context: Context? = getActivity()
+        val dbHelper = context?.let { DatabaseHelper(it) }
+
+        if (dbHelper != null) {
+            val res = dbHelper.checkPoliceRecord()
+            if (res.count == 0) {
+                dbHelper.insertRecord("Police", "", "111", "", "Emergency Services")
+            }
+            res.close()
+        }
+    }
+
 
 
     class MyCustomAdapter(

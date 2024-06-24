@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.awai.HomeFragment"
-        android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"
-        >
+            android:id="@+id/homeFragment"
+            android:name="com.example.awai.HomeFragment"
+            android:label="HomeFragment"
+            tools:layout="@layout/fragment_home"
+            >
         <action
-            android:id="@+id/action_homeFragment_to_confirmationFragment"
-            app:destination="@id/confirmationFragment" />
+                android:id="@+id/action_homeFragment_to_confirmationFragment"
+                app:destination="@id/confirmationFragment" />
         <action
                 android:id="@+id/action_homeFragment_to_settingFragment"
                 app:destination="@id/settingFragment" />
@@ -22,34 +22,34 @@
                 app:destination="@id/contactManagementFragment" />
     </fragment>
     <fragment
-        android:id="@+id/confirmationFragment"
-        android:name="com.example.awai.ConfirmationFragment"
-        android:label="ConfirmationFragment"
-        tools:layout="@layout/fragment_confirmation"
-        >
+            android:id="@+id/confirmationFragment"
+            android:name="com.example.awai.ConfirmationFragment"
+            android:label="ConfirmationFragment"
+            tools:layout="@layout/fragment_confirmation"
+            >
         <action
-            android:id="@+id/action_confirmationFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+                android:id="@+id/action_confirmationFragment_to_hurtConfirmationFragment"
+                app:destination="@id/hurtConfirmationFragment" />
         <action
-            android:id="@+id/action_confirmationFragment_to_contactFragment"
-            app:destination="@id/contactFragment" />
+                android:id="@+id/action_confirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
     </fragment>
     <fragment
-        android:id="@+id/contactFragment"
-        android:name="com.example.awai.ContactFragment"
-        android:label="ContactFragment"
-        tools:layout="@layout/fragment_contact"
-        >
+            android:id="@+id/contactFragment"
+            android:name="com.example.awai.ContactFragment"
+            android:label="ContactFragment"
+            tools:layout="@layout/fragment_contact"
+            >
         <action
-            android:id="@+id/action_contactFragment_to_callingFragment"
-            app:destination="@id/callingFragment" />
+                android:id="@+id/action_contactFragment_to_callingFragment"
+                app:destination="@id/callingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/callingFragment"
-        android:name="com.example.awai.CallingFragment"
-        android:label="CallingFragment"
-        tools:layout="@layout/fragment_calling"
-        >
+            android:id="@+id/callingFragment"
+            android:name="com.example.awai.CallingFragment"
+            android:label="CallingFragment"
+            tools:layout="@layout/fragment_calling"
+            >
         <action
                 android:id="@+id/action_callingFragment_to_notificationFragment"
                 app:destination="@id/notificationFragment" />
@@ -74,4 +74,81 @@
             android:name="com.example.awai.ContactManagementFragment"
             tools:layout="@layout/fragment_contact_management"
             android:label="ContactManagementFragment" />
+    <fragment
+            android:id="@+id/safeConfirmationFragment"
+            android:name="com.example.awai.SafeConfirmationFragment"
+            android:label="SafeConfirmationFragment"
+            tools:layout="@layout/fragment_safe_confirmation"
+            >
+        <action
+                android:id="@+id/action_safeConfirmationFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_safeConfirmationFragment_to_grownUpFragment"
+                app:destination="@id/grownUpFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/grownUpFragment"
+            android:name="com.example.awai.GrownUpFragment"
+            android:label="GrownUpFragment"
+            tools:layout="@layout/fragment_grownupwith_confirmation"
+            >
+        <action
+                android:id="@+id/action_grownUpFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_grownUpFragment_to_hurtConfirmationFragment"
+                app:destination="@id/hurtConfirmationFragment" />
+        <action
+                android:id="@+id/action_grownUpFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/hurtConfirmationFragment"
+            android:name="com.example.awai.HurtConfirmationFragment"
+            android:label="HurtConfirmationFragment"
+            tools:layout="@layout/fragment_hurt_confirmation"
+            >
+        <action
+                android:id="@+id/action_hurtConfirmationFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_hurtConfirmationFragment_to_scaredConfirmationFragment"
+                app:destination="@id/scaredConfirmationFragment" />
+        <action
+                android:id="@+id/action_hurtConfirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/scaredConfirmationFragment"
+            android:name="com.example.awai.ScaredConfirmationFragment"
+            android:label="ScaredConfirmationFragment"
+            tools:layout="@layout/fragment_scared_confirmation"
+            >
+        <action
+                android:id="@+id/action_scaredConfirmationFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_scaredConfirmationFragment_to_beingMeanFragment"
+                app:destination="@id/beingMeanFragment" />
+        <action
+                android:id="@+id/action_scaredConfirmationFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/beingMeanFragment"
+            android:name="com.example.awai.BeingMeanFragment"
+            android:label="BeingMeanFragment"
+            tools:layout="@layout/fragment_someone_being_mean"
+            >
+        <action
+                android:id="@+id/action_beingMeanFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_beingMeanFragment_to_contactFragment"
+                app:destination="@id/contactFragment" />
+        <action
+                android:id="@+id/action_beingMeanFragment_to_contactFragment2"
+                app:destination="@id/contactFragment" />
+    </fragment>
 </navigation>

@@ -7,6 +7,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.awai.PromptActivity
 
 
 class SplashScreen : AppCompatActivity() {
@@ -34,8 +35,8 @@ class SplashScreen : AppCompatActivity() {
         imageView = findViewById(R.id.imageView2)
         appName = findViewById(R.id.app_name)
 
-        imageView.animation = topAnim
-        appName.animation = bottomAnim
+        appName.animation = topAnim
+        imageView.animation = bottomAnim
 
 
         imageView.postDelayed({
@@ -45,5 +46,4 @@ class SplashScreen : AppCompatActivity() {
             finish()
         }, DELAY_TIME)
     }
-
 }

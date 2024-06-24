@@ -1,6 +1,7 @@
 package com.example.awai
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
@@ -14,7 +15,7 @@ class ConfirmationFragment : Fragment(R.layout.fragment_confirmation) {
         val confirmBtn = view.findViewById<ImageView>(R.id.confirmBtn)
 
         cancelBtn.setOnClickListener{
-            findNavController().navigate(R.id.action_confirmationFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_confirmationFragment_to_hurtConfirmationFragment)
         }
 
         confirmBtn.setOnClickListener{

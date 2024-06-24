@@ -1,6 +1,19 @@
 <!-- English For Teen -->
 <resources>
     <string name="app_name">AWAI</string>
+    <string name="welcome_message">Nau mai haere mai</string>
     <string name="do_you_need_help">Do you require assistance?</string>
     <string name="press_in_case_of_emergency">press in case of emergency</string>
+    <string name="need_help_now">Do you need immediate assistance?</string>
+    <string name="safe_place_now">Are you currently in a safe location?</string>
+    <string name="grown_up_with_you">Is there an adult or friend you trust nearby?</string>
+    <string name="are_you_hurt">Are you physically hurt or injured?</string>
+    <string name="are_you_scared">Do you feel scared or threatened?</string>
+    <string name="someone_being_mean">Is someone making you feel uncomfortable or unsafe?</string>
+    <string name="child_mode">child mode</string>
+    <string name="change_details">change details</string>
+    <string name="language">language</string>
+    <string name="help">help</string>
+    <string name="about">about</string>
+    <string name="report_a_problem">report a problem</string>
 </resources>

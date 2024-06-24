@@ -21,6 +21,7 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         val adapter = activity?.let { MyCustomAdapter(it, dataList) }
         listView.adapter = adapter
 
+
         val sendBtn = view.findViewById<Button>(R.id.sendBtn)
 
         sendBtn.setOnClickListener {
@@ -81,5 +82,6 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
             dataHashMap1["relations"] = res.getString(5)
             dataList.add(dataHashMap1)
         }
+
     }
 }

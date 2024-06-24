@@ -17,6 +17,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp">
 
@@ -45,12 +46,21 @@
 
         </LinearLayout>
 
-        <ImageView
-                android:layout_width="95dp"
-                android:layout_height="70dp"
-                android:src="@drawable/ic_logo"
-                android:layout_marginLeft="170dp"
-                android:layout_marginTop="8dp" />
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginTop="6dp">
+
+            <ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/awai_logo"
+                    />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

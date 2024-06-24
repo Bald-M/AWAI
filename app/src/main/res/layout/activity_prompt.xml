@@ -10,11 +10,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
+            android:layout_marginTop="200dp"
+            android:padding="18dp">
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:text="Before starting, please answer the following questions"
                 android:textStyle="bold"
                 android:textSize="20sp"
@@ -25,22 +27,28 @@
                 android:id="@+id/ageET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:hint="What's your age?"
                 android:inputType="number" />
 
         <EditText
                 android:id="@+id/languageET"
                 android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
                 android:layout_height="wrap_content"
-                android:hint="what's your preference language?(English/Maori)"
+                android:hint="what's your language? (English/Maori)"
                 android:inputType="text" />
 
 
         <Button
                 android:id="@+id/confirmBtn"
                 android:text="Confirm"
-                android:layout_marginLeft="140dp"
-                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/blue"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
 
