@@ -3,7 +3,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FEFEFE">
 
 
     <TextView
@@ -48,9 +49,9 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/warning"
-            android:backgroundTint="@color/red"
+            android:background="@drawable/hurt"
             android:layout_marginTop="250dp"
-            app:layout_constraintHorizontal_bias="0.5" />
+            app:layout_constraintHorizontal_bias="0.5"
+            android:backgroundTintMode="add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

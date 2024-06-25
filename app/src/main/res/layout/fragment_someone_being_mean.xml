@@ -48,8 +48,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/warning"
-            android:backgroundTint="@color/red"
+            android:background="@drawable/mean"
             android:layout_marginTop="250dp"
             app:layout_constraintHorizontal_bias="0.5" />
 
